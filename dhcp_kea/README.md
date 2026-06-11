@@ -4,7 +4,7 @@ Tested on GNS3 2.2.59
 
 2026.05
 
-![Network diagram](figuress/net_topo.png)
+![Network diagram](figures/net_topo.png)
 
 # Required Images
 

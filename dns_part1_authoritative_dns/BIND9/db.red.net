@@ -1,0 +1,14 @@
+;
+; BIND9 forward data file for red.net.
+;
+$TTL    86400
+$ORIGIN red.net.
+@       IN      SOA     ns1.red.net. hostmaster.red.net. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                          86400 )       ; Negative Cache TTL
+;
+@       IN      NS      ns1.red.net.
+ns1     IN      A       89.30.80.35

@@ -1,0 +1,23 @@
+// Forward zone for red.net.
+zone "red.net." {
+  type master;
+  file "/var/lib/bind/db.red.net";
+};
+
+// Forward zone for blue.net.
+zone "blue.net." {
+  type master;
+  file "/var/lib/bind/db.blue.net";
+};
+
+// Reverse zone for red.net.
+zone "80.30.89.in-addr.arpa." {
+  type master;
+  file "/var/lib/bind/db.red.net.rev";
+};
+
+// Reverse zone for blue.net.
+zone "5.168.192.in-addr.arpa." {
+  type master;
+  file "/var/lib/bind/db.blue.net.rev";
+};

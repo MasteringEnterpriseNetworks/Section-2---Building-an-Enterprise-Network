@@ -1,0 +1,26 @@
+// Access Control List
+acl labnets {
+  127.0.0.1;      //localhost
+  89.30.80.32/29; //localnet (red.net.)
+  192.168.5.0/24; //blue.net.
+};
+
+// Server configuration parametesr
+options {
+  directory "/var/cache/bind";
+
+  version "not currently available";
+  recursion no;
+  empty-zones-enable no;
+
+  allow-query { labnets; };
+  allow-query-cache { none; };
+  allow-recursion { none; };
+  allow-transfer { none; };
+
+  dnsset-validation no;
+
+  auth-nxdomain no;
+  listen-on port 53 { 127.0.0.1; 89.30.80.35; };
+  listen-on-v6 { none; };
+};

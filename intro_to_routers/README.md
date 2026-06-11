@@ -3,7 +3,7 @@ Tested on GNS3 2.2.59
 
 2026.05
 
-![Network diagram](assets/c18_topo.png)
+![Network diagram](figures/net_topo.png)
 
 # Required Images
 - MikroTik CHR 7.16
